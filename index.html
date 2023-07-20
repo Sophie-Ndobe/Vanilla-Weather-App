@@ -12,13 +12,40 @@
       crossorigin="anonymous"
     />
 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&family=Dancing+Script:wght@400;500;600;700&family=PT+Mono&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ysabeau+SC:wght@1;100;200;300;400;500;600;800;900;1000&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
     <div class="container">
       <div class="app-wrapping">
-        <h1>Pretoria</h1>
+        <div class="row">
+          <div class="col-6">
+            <h1>Pretoria</h1>
+            <ul>
+              <li>Thursday 10:26, Partly cloudy</li>
+              <li>Humidity: 73%, Wind: 2km/h</li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <div class="d-flex">
+              <img
+                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                alt="Sun-clouds"
+                width="100px"
+              />
+              <span class="current-temperature">12</span
+              ><span class="temperature-units">°C|°F</span>
+            </div>
+          </div>
+        </div>
       </div>
+      <small>Open source code, by Sophie Ndobe</small>
     </div>
     <script src="src/app.js"></script>
   </body>
