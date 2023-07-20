@@ -23,29 +23,37 @@
   </head>
   <body>
     <div class="container">
-      <div class="app-wrapping">
-        <div class="row">
-          <div class="col-6">
-            <h1>Pretoria</h1>
-            <ul>
-              <li>Thursday 10:26, Partly cloudy</li>
-              <li>Humidity: 73%, Wind: 2km/h</li>
-            </ul>
-          </div>
-          <div class="col-6">
-            <div class="d-flex">
-              <img
-                src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
-                alt="Sun-clouds"
-                width="100px"
-              />
-              <span class="current-temperature">12</span
-              ><span class="temperature-units">°C|°F</span>
+      <div class="outer-wrapper">
+        <div class="app-wrapping">
+          <div class="row">
+            <div class="col-6">
+              <h1>Pretoria</h1>
+              <ul>
+                <li>Thursday 10:26, Partly cloudy</li>
+                <li>Humidity: 73%, Wind: 2km/h</li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <div class="d-flex weather-temperature">
+                <img
+                  src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+                  alt="Sun-clouds"
+                  width="100px"
+                />
+                <span class="current-temperature">12</span
+                ><span class="temperature-units">°C|°F</span>
+              </div>
             </div>
           </div>
         </div>
+        <small
+          ><a
+            href="https://github.com/Sophie-Ndobe/Vanilla-Weather-App"
+            class="coder"
+            >Open source code</a
+          >, by Sophie Ndobe</small
+        >
       </div>
-      <small>Open source code, by Sophie Ndobe</small>
     </div>
     <script src="src/app.js"></script>
   </body>

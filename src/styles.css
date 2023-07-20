@@ -18,9 +18,12 @@ li {
   font-size: 16px;
   line-height: 19px;
 }
-.app-wrapping {
+
+.outer-wrapper {
   max-width: 600px;
   margin: 30px auto;
+}
+.app-wrapping {
   border-radius: 10px;
   border: 1px solid #dadde1;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
@@ -37,5 +40,9 @@ li {
   font-weight: 600;
 }
 .temperature-units {
-  top: 100px;
+  position: relative;
+  top: 20px;
+}
+.coder {
+  text-decoration: none;
 }
