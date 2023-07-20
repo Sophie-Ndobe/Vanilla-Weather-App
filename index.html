@@ -25,7 +25,7 @@
     <div class="container">
       <div class="outer-wrapper">
         <div class="app-wrapping">
-          <form>
+          <form id="form">
             <div class="row search-engine-row">
               <div class="col-9">
                 <input
@@ -35,10 +35,13 @@
                   aria-label="default input example"
                   autofocus
                   autocomplete="off"
+                  id="city"
                 />
               </div>
               <div class="col-3">
-                <button class="btn btn-primary">Search</button>
+                <button type="submit" class="btn btn-primary w-100">
+                  Search
+                </button>
               </div>
             </div>
           </form>

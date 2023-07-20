@@ -25,3 +25,12 @@ let day = days[currentDate.getDay()];
 
 let updatingDate = document.querySelector("#date");
 updatingDate.innerHTML = `${day} ${hours}:${minutes}`;
+
+function searchCity(event) {
+  event.preventDefault();
+  let cityInput = document.querySelector("#city");
+  console.log(cityInput.value);
+}
+
+let submitForm = document.querySelector("#form");
+submitForm.addEventListener("submit", searchCity);
