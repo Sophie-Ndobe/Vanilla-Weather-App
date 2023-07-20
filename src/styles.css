@@ -36,6 +36,11 @@ li {
 }
 .btn-primary {
   width: 94px;
+  margin-left: 10px;
+}
+
+.weather-condition {
+  color: #ff876d;
 }
 .d-flex {
   justify-content: flex-end;
