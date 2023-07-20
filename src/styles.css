@@ -1,11 +1,9 @@
-body {
-  font-family: "Roboto", sans-serif;
-}
 h1 {
-  font-size: 24px;
+  font-size: 28px;
   line-height: 28px;
   color: #272142;
   font-weight: 500;
+  font-family: "Roboto", sans-serif;
 }
 
 ul {
@@ -16,7 +14,9 @@ li {
   list-style: none;
   padding: 0;
   font-size: 16px;
-  line-height: 19px;
+  color: #6e6969;
+  line-height: 25px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .outer-wrapper {
@@ -31,17 +31,25 @@ li {
   margin-bottom: 0;
 }
 
+.search-engine-row {
+  margin-bottom: 25px;
+}
+.btn-primary {
+  width: 94px;
+}
 .d-flex {
   justify-content: flex-end;
 }
 .current-temperature {
-  font-size: 64px;
+  font-size: 68px;
   color: #272142;
   font-weight: 600;
+  font-family: "Roboto", sans-serif;
 }
 .temperature-units {
   position: relative;
   top: 20px;
+  font-family: "Roboto", sans-serif;
 }
 .coder {
   text-decoration: none;
