@@ -57,6 +57,13 @@ function displayWeatherConditions(response) {
   let descriptionUpdate = document.querySelector("#description");
   let descriptionValue = response.data.condition.description;
   descriptionUpdate.innerHTML = `${descriptionValue}`;
+
+  let iconUpdate = document.querySelector("#icon");
+  let iconValue = response.data.condition.icon;
+  iconUpdate.setAttribute(
+    "src",
+    `http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${iconValue}.png`
+  );
 }
 
 let submitForm = document.querySelector("#form");
