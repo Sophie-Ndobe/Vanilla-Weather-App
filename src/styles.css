@@ -34,7 +34,9 @@ li {
 .search-engine-row {
   margin-bottom: 25px;
 }
-
+.description {
+  text-transform: capitalize;
+}
 .weather-condition {
   color: #ff876d;
 }

@@ -19,6 +19,8 @@
       rel="stylesheet"
     />
 
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
@@ -47,12 +49,20 @@
           </form>
           <div class="row">
             <div class="col-6">
-              <h1>Pretoria</h1>
+              <h1 id="heading">Santorini</h1>
               <ul>
-                <li><span id="date">Thursday 10:26</span>, Partly cloudy</li>
                 <li>
-                  Humidity: <span class="weather-condition">73%</span>, Wind:
-                  <span class="weather-condition">2km/h</span>
+                  <span id="date">Thursday 10:26</span>,
+                  <span id="description" class="description">Partly cloudy</span>
+                </li>
+                <li>
+                  Humidity:
+                  <span class="weather-condition"
+                    ><span id="humidity-value">73</span> %</span
+                  >, Wind:
+                  <span class="weather-condition"
+                    ><span id="wind-value">2</span> km/h</span
+                  >
                 </li>
               </ul>
             </div>
@@ -63,7 +73,8 @@
                   alt="Sun-clouds"
                   width="100px"
                 />
-                <span class="current-temperature">12</span
+                <span class="current-temperature" id="temperature-value"
+                  >12</span
                 ><span class="temperature-units">°C | °F</span>
               </div>
             </div>
