@@ -26,18 +26,20 @@ let day = days[currentDate.getDay()];
 let updatingDate = document.querySelector("#date");
 updatingDate.innerHTML = `${day} ${hours}:${minutes}`;
 
-function searchCity(event) {
+function submitAction(event) {
   event.preventDefault();
   let cityInput = document.querySelector("#city").value;
+  searchCity(cityInput);
+}
 
+function searchCity(city) {
   let apiKey = "2c13e0a2b6fe347b0421bb02eef2o43t";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${cityInput}&key=${apiKey}`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
 
   axios.get(`${apiUrl}`).then(displayWeatherConditions);
 }
 
 function displayWeatherConditions(response) {
-  //console.log(response);
   let headingUpdate = document.querySelector("#heading");
   let headingValue = response.data.city;
   headingUpdate.innerHTML = `${headingValue}`;
@@ -67,4 +69,6 @@ function displayWeatherConditions(response) {
 }
 
 let submitForm = document.querySelector("#form");
-submitForm.addEventListener("submit", searchCity);
+submitForm.addEventListener("submit", submitAction);
+
+searchCity("Pretoria");
