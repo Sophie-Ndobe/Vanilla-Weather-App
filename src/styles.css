@@ -20,15 +20,16 @@ li {
 }
 
 .outer-wrapper {
-  max-width: 600px;
+  max-width: 650px;
   margin: 30px auto;
 }
 .app-wrapping {
   border-radius: 10px;
   border: 1px solid #dadde1;
   box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
-  padding: 20px;
+  padding: 60px 20px 20px 20px;
   margin-bottom: 0;
+  background: #ccf9ff;
 }
 
 .search-engine-row {
@@ -55,9 +56,6 @@ li {
   font-family: "Roboto", sans-serif;
 }
 
-.coder {
-  text-decoration: none;
-}
 .forecast-row {
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -73,4 +71,7 @@ li {
   color: #ff5722;
   opacity: 0.6;
   font-size: 14px;
+}
+.coder {
+  text-decoration: none;
 }
