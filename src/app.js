@@ -26,6 +26,29 @@ let day = days[currentDate.getDay()];
 let updatingDate = document.querySelector("#date");
 updatingDate.innerHTML = `${day} ${hours}:${minutes}`;
 
+function displayWeatherForecast() {
+  let weatherForecast = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  forecastHTML =
+    forecastHTML +
+    `
+  <div class="col-2">
+    Sat
+    <img
+      src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png"
+      alt=""
+      width="50px"
+    />
+    <div>
+      <span class="forecast-max">18°</span>
+      <span class="forecast-min">12°</span>
+    </div>
+  </div>`;
+  forecastHTML = forecastHTML + `</div>`;
+  weatherForecast.innerHTML = forecastHTML;
+}
+
 function submitAction(event) {
   event.preventDefault();
   let cityInput = document.querySelector("#city").value;
@@ -95,3 +118,4 @@ let celciusConversion = document.querySelector("#celcius-unit");
 celciusConversion.addEventListener("click", changeToCelcius);
 
 searchCity("Pretoria");
+displayWeatherForecast();
