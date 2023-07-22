@@ -98,10 +98,8 @@ function displayWeatherConditions(response) {
   let headingValue = response.data.city;
   headingUpdate.innerHTML = `${headingValue}`;
 
-  celciusTemperature = Math.round(response.data.temperature.current);
-
   let temperatureUpdate = document.querySelector("#temperature-value");
-  let temperatureValue = celciusTemperature;
+  let temperatureValue = Math.round(response.data.temperature.current);
   temperatureUpdate.innerHTML = `${temperatureValue}`;
 
   let humidityUpdate = document.querySelector("#humidity-value");
@@ -126,28 +124,7 @@ function displayWeatherConditions(response) {
   getWeatherForecast(response.data.coordinates);
 }
 
-function changeToFahrenheit(event) {
-  event.preventDefault();
-  let temperatureUpdate = document.querySelector("#temperature-value");
-  let fahrenheitTemperature = Math.round((celciusTemperature * 9) / 5 + 32);
-  temperatureUpdate.innerHTML = fahrenheitTemperature;
-}
-
-function changeToCelcius(event) {
-  event.preventDefault();
-  let temperatureUpdate = document.querySelector("#temperature-value");
-  temperatureUpdate.innerHTML = celciusTemperature;
-}
-
-let celciusTemperature = null;
-
 let submitForm = document.querySelector("#form");
 submitForm.addEventListener("submit", submitAction);
-
-let fahrenheitConversion = document.querySelector("#fahrenheit-unit");
-fahrenheitConversion.addEventListener("click", changeToFahrenheit);
-
-let celciusConversion = document.querySelector("#celcius-unit");
-celciusConversion.addEventListener("click", changeToCelcius);
 
 searchCity("Pretoria");
